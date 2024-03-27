@@ -24,6 +24,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 18px;
+  background-image: url('../../images/arrow_up.png');
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 30%;
+}
+
 body {
 	line-height: 1;
 }
@@ -3164,7 +3185,24 @@ input, select, textarea {
 
 /* Mobile */
 
+
 	@media screen and (max-width: 736px) {
+
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 14px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			padding: 20px;
+			border-radius: 30%;
+			}
 
 		/* Basic */
 
