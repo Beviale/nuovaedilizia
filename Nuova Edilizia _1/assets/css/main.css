@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
 
-/*
-	Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2807,13 +2802,15 @@ input, select, textarea {
 
 .container_contact{
 	display: flex; /* Utilizza il flexbox model */
-    justify-content: space-around;
-    align-items: center; /* Centra gli elementi verticalmente */
+
+	flex-direction: column;
+    gap:30px;
+    align-items: flex-start; /* Centra gli elementi verticalmente */
 }
 	.phone{
-		width: 100px;
-		height: 100px;
-		background-color: wh;
+		width: 70px;
+		height: 70px;
+		background-color: white;
 		border-radius: 50%;
 		background-image: url("images/telephone.png");
 		background-size: 60%;
@@ -2821,16 +2818,16 @@ input, select, textarea {
         background-position: center;
 		border: 2px solid #eb0f0f; /* Button border */
 	}
-	.phone-container {
-	    display: flex;
-		flex-direction: column;
-		align-items: center; /* Centra orizzontalmente */
-		justify-content: center; /* Centra verticalmente */
+	.phone_container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap:30px;
 	}
 
 	.mail{
-		width: 100px;
-		height: 100px;
+		width: 70px;
+		height: 70px;
 		background-color: wh;
 		border-radius: 50%;
 		background-image: url("../../images/mail.png");
