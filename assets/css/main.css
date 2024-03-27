@@ -3205,8 +3205,7 @@ input, select, textarea {
 
 /* Mobile */
 
-
-	@media screen and (max-width: 736px) {
+@media screen and (max-height: 1000px) {
 
 		#myBtn {
 			display: none;
@@ -3220,9 +3219,51 @@ input, select, textarea {
 			background-color: black;
 			color: white;
 			cursor: pointer;
-			padding: 20px;
+			padding: 30px;
 			border-radius: 30%;
 			}
+	}	
+
+@media screen and (max-height: 700px) {
+
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 14px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			padding: 25px;
+			border-radius: 30%;
+			}
+	}	
+
+@media screen and (max-height: 500px) {
+
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 14px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			padding: 21px;
+			border-radius: 30%;
+			}
+	}	
+
+
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
