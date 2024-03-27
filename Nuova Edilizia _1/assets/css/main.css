@@ -2802,10 +2802,24 @@ input, select, textarea {
 
 .container_contact{
 	display: flex; /* Utilizza il flexbox model */
-
 	flex-direction: column;
     gap:30px;
     align-items: flex-start; /* Centra gli elementi verticalmente */
+}
+
+.google-map {
+	padding-bottom: 50%;
+	position: relative;
+	border: 2px solid #4eb980;
+	margin-top: 10px;
+}
+
+.google-map iframe {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
 }
 	.phone{
 		width: 70px;
@@ -2831,15 +2845,39 @@ input, select, textarea {
 		background-color: wh;
 		border-radius: 50%;
 		background-image: url("../../images/mail.png");
-		background-size: 60%;
+		background-size: 50%;
 	    background-repeat: no-repeat;
         background-position: center;
 		border: 2px solid #007bff; /* Button border */
 	}
 
-	.mail-container {
-		
+	.mail_container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap:30px
 	}
+
+	.position{
+		width: 70px;
+		height: 70px;
+		background-color: wh;
+		border-radius: 50%;
+		background-image: url("../../images/position.png");
+		background-size: 50%;
+	    background-repeat: no-repeat;
+        background-position: center;
+		border: 2px solid #4eb980; /* Button border */
+	}
+
+	.position_container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap:30px;
+	}
+
+
 	#footer {
 		background-attachment: scroll;
 		background-color: #eb0f0f;
