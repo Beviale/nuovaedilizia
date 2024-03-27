@@ -45,6 +45,12 @@ footer, header, hgroup, menu, nav, section {
   border-radius: 30%;
 }
 
+#myBtn:hover{
+	opacity: 0.7;
+}
+
+
+
 body {
 	line-height: 1;
 }
@@ -2837,6 +2843,20 @@ input, select, textarea {
         background-position: center;
 		border: 2px solid #eb0f0f; /* Button border */
 	}
+	.phone:hover, .mail:hover, .position:hover{
+		opacity: 0.5;
+
+	}
+	.phone:active{
+		background-color: red;
+	}
+	.mail:active{
+		background-color: #007bff;
+	}
+	.position:active{
+		background-color: #4eb980;
+	}
+	
 	.phone_container {
 		display: flex;
 		flex-direction: row;
