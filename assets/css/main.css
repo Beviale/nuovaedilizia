@@ -2836,7 +2836,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap:30px;
+		gap:20px;
 	}
 
 	.mail{
@@ -2855,7 +2855,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap:30px
+		gap:20px
 	}
 
 	.position{
@@ -2874,7 +2874,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap:30px;
+		gap:20px;
 	}
 
 
@@ -3313,8 +3313,11 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		/* Section/Article */
+		.contact_text{
+			font-size: 13px;
+		}
 
-			header.major {
+			header.m14jor {
 				padding-left: 1em;
 				padding-right: 1em;
 			}
