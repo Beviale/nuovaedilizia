@@ -3461,12 +3461,17 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding-left: 2em;
-				padding-right: 2em;
+				padding-left: 1em;
+				padding-right: 3em;
 			}
 
 				#header br {
 					display: none;
 				}
+
+			.logo_home{
+				padding-left: 65px;
+
+			}
 
 	}
