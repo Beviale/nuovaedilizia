@@ -104,7 +104,7 @@
 					
 				</div>
 
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="assets/css/review.css">
@@ -176,6 +176,44 @@
             </div>
         </div>
     </div>
+	<link rel="stylesheet" href="assets/css/slider.css">
+	<section class="container-slider">
+	<h2 id="title-slider">Alcuni dei nostri lavori</h2>
+		<div class="slider-wrapper">
+			<div class="slider-images">
+				<img id="slide-1" src="images/martinadopo.jpg" alt"Immagini lavori eseguiti" />
+				<img id="slide-2" src="images/martinadopo2.jpg" alt"Immagini lavori eseguiti" />
+				<img id="slide-3" src="images/lavorodopo.jpg" alt"Immagini lavori eseguiti" />
+			</div>
+			<div class="slider-nav">
+				<a id="slide-1-link" href="#slide-1" aria-label=""  onclick=selected(this)></a>
+				<a id="slide-2-link" href="#slide-2" aria-label=""  onclick=selected(this)></a>
+				<a id="slide-3-link" href="#slide-3" aria-label=""  onclick=selected(this)></a>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!--Script for the clicks on the slider links-->
+	<script>
+		document.querySelectorAll('.slider-nav a').forEach(function(link) {
+			link.addEventListener('click', function(event) {
+				event.preventDefault(); // Impedisce il comportamento predefinito del clic sul link
+
+				// Salva la posizione della finestra prima di aprire il link
+				var currentPosition = window.scrollY;
+
+				// Esegui l'azione desiderata, ad esempio l'apertura di un link
+				window.location.href = link.href;
+
+				// Ripristina la posizione della finestra dopo l'apertura del link
+				window.scrollTo(0, currentPosition);
+			});
+		});
+	</script>
+
+
 
 				<!--
 				<div class="box container">
