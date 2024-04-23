@@ -2,13 +2,12 @@
 
 .container-slider {
 	padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    
 }
 
 .slider-wrapper {
 	position: relative;
-	max-width: 52rem;
+	max-width: 55rem;
 	margin: 0 auto;
 }
 
