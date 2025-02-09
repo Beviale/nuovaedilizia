@@ -189,8 +189,35 @@
 				<a id="slide-1-link" href="#slide-1" aria-label=""  onclick=selected(this)></a>
 				<a id="slide-2-link" href="#slide-2" aria-label=""  onclick=selected(this)></a>
 				<a id="slide-3-link" href="#slide-3" aria-label=""  onclick=selected(this)></a>
-			</div>
+			</div>			
 		</div>
+
+
+		<button id="videoButtonStart" class="video-button" onclick="mostraVideo()">Guarda il Video</button>
+		<div class="responsive-frame" id="videoFrame">
+			<iframe src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	
+		<script>
+			function mostraVideo() 
+			{
+				var frame = document.getElementById('videoFrame');
+                var iframe = frame.querySelector('iframe');
+				var button = document.getElementById('videoButtonStart');
+        		if (frame.style.display === 'none' || frame.style.display === '') 
+				{
+					iframe.src = "https://www.youtube.com/embed/P2hlU8YfhCs"; 
+					frame.style.display = 'block'; 
+					button.textContent = "Nascondi Video";
+           		} 
+				else 
+				{
+					frame.style.display = 'none'; 
+					iframe.src = ""; 
+					button.textContent = "Mostra Video";
+				}
+			}
+		</script>
 	</section>
 
 
